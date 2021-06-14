@@ -1,0 +1,463 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>Yum Juices</title>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="yum.js"></script>
+
+</head>
+<body>
+
+               
+<div id="content">
+                <div id="header">
+                <h1>YUM JUICES</h1>
+                
+                
+                
+<div id="navbar">
+			<ul>
+					    <li><a href="index.html">HOME</a></li>
+						<li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">SERVICES</a></li>
+						<li><a href="#">CONTACT US</a></li>
+						</ul>
+						</div><!--end navbar -->
+  </div><!--end header -->
+
+					
+						
+					
+
+  <div id="text_content">
+							<h3>Welcome to Yum Juices , industry-leading manufacturers of quality juices, smoothies and fruit/confectionary sauces to the retail and food service sectors </h3>
+                            <p>Yum Juices is a young company that serves up delicious, nutritious, energising smoothies
+and juices. The comp
+any has a large portfolio of products ranging from dairy
+-
+free, gluten
+-
+free, vegetarian and vegan smoothies and juices. Additionally, Yum Juices provides, to their
+consumers, details of the main ingredients of their products to ensure that those allergic to
+certain food don’t absorb the wrong type of food. Finally, the company offers the option to
+have no added sugar or additives in their juices. </p>
+                            <p class="redtext">NEW - Discount of 12.5%  on orders over 5 crates!</p>
+  </div><!--end text_content -->
+                            
+										<div id="content_container" style=" display:block">
+                                        
+                                        <div id="basket_wrapper">
+										  <p class="basket">Total cost: <span id="totalCost"> </span></p>
+                                                             <p class="basket">Total VAT: <span id="VAT"> </span></p>
+                                                            <p class="basket">Total with VAT: <span id="totalVAT"> </span></p>
+                                                            <p class="basket"> <span id="discount"> </span></p>
+                                        <input value="Add to Bakset" onclick="calculateOrder()" type="button" class="button_addtobasket"/>
+                                         <br/>                
+                                        <p><input value="CHECK OUT" onclick="ShowHide()" type="button" class="button_chceckout"/></p>
+                                                            
+                                                            
+                                                     </div><!--end basket -->
+                                                     
+                                      
+                                        <div id="left_content">
+                                        
+                                        
+                                        <h2>Juices</h2>
+                                        
+                                        <div class="product">
+                                        <h4> Orange Juice</h4>
+                                        <p class="price">Price: £7.89</p>
+                                        <img src="images/orange_juice.jpg" width="100" height="100" alt="orange" /><br/>
+                                        <p>Nullam quis ante. Etiam sit amet nutak polosek  tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. </p>
+                                        <br/>
+                                        <label class="orangeJu">Quantity</label>
+                                        <input id="orangeJu" maxlength="2" size="2" value="0" type="text"/>
+                                        <label class="proIns">no sugar</label><input id="noSAorangeJu" type="checkbox"/>
+                                        </div><!--end product -->
+                                        
+                                        
+                                        <div class="product">
+                                        <h4> Apple Juice </h4>
+                                        <p class="price">Price: £7.89</p>
+                                        <img src="images/apple_juice.jpg" width="100" height="100" alt="apple" /><br/>
+                                        <p>Nullam quis ante. Etiam sit amet nutak polosek  tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
+                                        <label class="appleJu">Quantity</label>
+                                        <input id="appleJu" maxlength="2" size="2" value="0" type="text"/>
+                                        <label class="proIns">no sugar</label><input id="noSAappleJu" type="checkbox"/>
+                                        </div><!--end product -->
+                                        
+                                        <div class="product">
+                                        <h4> Grapefruit Juice </h4>
+                                        <p class="price">Price: £7.89</p>
+                                        <img src="images/orange_juice.jpg" width="100" height="100" alt="grapefruit" /><br/>
+                                        <p> Nullam quis ante. Etiam sit amet nutak polosek  tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
+                                        <label class="grapeJu">Quantity</label>
+                                        <input id="grapeJu" maxlength="2" size="2" value="0" type="text"/>
+                                        <label class="proIns">no sugar</label><input id="noSAgrapeJu" type="checkbox"/>
+                                        </div><!--end product -->
+                                        
+                                        <div class="product">
+                                        <h4>Carrot Juice </h4>
+                                        <p class="price">Price: £7.89</p>
+                                        <img src="images/carrot_juice.jpg" width="100" height="100" alt="carrot" /><br/>
+                                        <p>Nullam quis ante. Etiam sit amet nutak polosek  tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
+                                        <label class="carrotJu">Quantity</label>
+                                        <input id="carrotJu" maxlength="2" size="2" value="0" type="text"/>
+                                        <label class="proIns">no sugar</label><input id="noSAcarrotJu" type="checkbox"/>
+                                        </div><!--end product -->
+                                        
+                                        <div class="product">
+                                        <h4>Carrot-Orange Juice</h4>
+                                        <p class="price">Price: £7.89</p><br/>
+                                        <img src="images/orange_juice.jpg" width="100" height="100" alt="carrot-orange" />
+                                        <p>Nullam quis ante. Etiam sit amet nutak polosek  tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
+                                        <label class="carorJu">Quantity</label>
+                                        <input id="carorJu" maxlength="2" size="2" value="0" type="text"/>
+                                        <label class="proIns">no sugar</label><input id="noSAcarorJu" type="checkbox"/>
+                                        </div><!--end product -->
+                                        </div><!--end left_content -->
+                                        
+                                        
+                                        
+                                        <div id="right_content">
+                                        
+                                        <h2>Smoothies</h2>
+                                        
+                                        <div class="product">
+                                        <h4>Smoothie - Tropical</h4>
+                                        <p class="price">Price: £9.89</p><br/>
+                                        <img src="images/apple_juice_light.jpg" width="100" height="100" alt="tropical" />
+                                        <p>Nullam quis ante. Etiam sit amet nutak polosek  tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
+                                        <label class="tropSm">Quantity</label>
+                                        <input id="tropSm" maxlength="2" size="2" value="0" type="text"/>
+                                        <label class="proIns">no sugar</label><input  id="noSAtropSm" type="checkbox"/>
+                                        </div><!--end product -->
+                                        
+                                        <div class="product">
+                                        <h4>Smoothie - Cranberry Blast</h4>
+                                        <p class="price">Price: £9.89</p><br/>
+                                        <img src="images/mango_juice.jpg" width="100" height="100" alt="cranberry" />
+                                        <p>Nullam quis ante. Etiam sit amet nutak polosek  tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
+                                        <label class="cranberrySm">Quantity</label>
+                                        <input id="cranberrySm" maxlength="2" size="2" value="0" type="text"/>
+                                        <label class="proIns">no sugar</label><input id="noSAcrannberrySm" type="checkbox"/>
+                                        </div><!--end product -->
+                                        
+                                        <div class="product">
+                                        <h4>Smoothie - Banana</h4>
+                                        <p class="price">Price: £9.89</p><br/>
+                                        <img src="images/apple_juice_light.jpg" width="100" height="100" alt="bannana" />
+                                        <p>Nullam quis ante. Etiam sit amet nutak polosek  tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
+                                        
+                                        <label class="bananaSm">Quantity</label>
+                                        <input id="bananSm" maxlength="2" size="2" value="0" type="text"/>
+                                        <label class="proIns">no sugar</label><input id="noSAbananaSm" type="checkbox"/>
+                                        </div><!--end product -->
+                                        
+                                        <div class="product">
+                                        <h4>Smoothie - Tomato</h4>
+                                        <p class="price">Price: £9.89</p><br/>
+                                        <img src="images/tomato_juice.jpg" width="100" height="100" alt="tomatto" />
+                                        <p>Nullam quis ante. Etiam sit amet nutak polosek  tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
+                                        <label class="protein">Quantity</label>
+                                        <input id="protein" maxlength="2" size="2" value="0" type="text"/>
+                                        <label class="proIns">no sugar</label><input id="noSAprotein" type="checkbox"/>
+                                        </div><!--end product -->
+                                        
+                                        <div class="product">
+                                        <h4>Smoothie - Banana</h4>
+                                        <p class="price">Price: £9.89</p><br/>
+                                        <img src="images/apple_juice.jpg" width="100" height="100" alt="superman" />
+                                        <p>Nullam quis ante. Etiam sit amet nutak polosek  tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
+                                        <label class="superman">Quantity</label>
+                                        <input id="superman" maxlength="2" size="2" value="0" type="text"/>
+                                        <label class="proIns">no sugar</label><input id="noSAsuperman" type="checkbox"/>
+                                        </div><!--end product -->
+                                        
+                                        
+                                        
+                                        </div><!--end right content -->
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        <div id="payment_wrapper" style="display:none">
+                                        
+                                       <div id="payment">
+                                                  <p class="headings">Pay for your products</p>
+                                          <p>Enter your credit / debit details:</p>
+      
+      											  <ul>
+        										  <li>
+                                                <label class="card">Card type</label>		
+                                                <select name="cardtype" id="cardType">
+                                                
+                                                <option selected="selected" value="Visa Debit">Visa Debit</option>
+                                                <option value="Mastercard">Mastercard</option>
+                                                <option value="Visa Credit">Visa Credit</option>
+                                                <option value="Electron">Electron</option>
+                                                <option value="Solo">Solo</option>
+												</select>
+												
+                                                
+                                                </li>
+                                                </ul>
+                                                  <ul>
+        											<li>
+                                                <label class="card">Card number</label>
+                                                <input id="cardNumber" type="text"/>                                       
+                                                </li>
+                                                </ul>
+                                                <ul>
+        											<li>
+                                                <label class="card">Name on card</label>
+                                                <input id="cardholderName" type="text"/>
+                                                
+			  										</li>
+                                                </ul>
+			  									  <ul>
+        											<li>
+                                                <label class="card">Expiration Date </label>
+                                                <select id="expirationMonth">
+                                                <option selected="selected" value="0">month</option>
+                                                <option value="01">01</option>
+                                                <option value="02">02</option>
+                                                <option value="03">03</option>
+                                                <option value="04">04</option>
+                                                <option value="05">05</option>
+                                                <option value="06">06</option>
+                                                <option value="07">07</option>
+                                                <option value="08">08</option>
+                                                <option value="09">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                </select>
+                                                
+                                                <select name="expirationYear" id="expirationYear">
+                                                <option selected="selected" value="0">year</option>
+                                               
+                                                
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                
+                                                </select>
+														</li>
+                                                </ul>
+			  									  <ul>
+        											<li>
+                                                <label for="cv2" id="moko" class="card">3 Digit Verification Number</label>
+                                                <input size="3" maxlength="3" id="cv2" type="text"/>
+                                                
+      													</li>
+                                                </ul>
+			  									   </div> <!--end payment --> 
+                                        
+                                        
+ 								
+                                
+                                
+								<p class="headings"> Personal details</p>
+                                 <ul>
+                                            <li>
+                                            <label class="box">Title</label>
+                                            <select id="title">
+                                            <option selected="selected" value="Mr">Mr</option>
+                                            <option value="Ms">Ms</option>
+                                            <option value="Mrs">Mrs</option>
+                                            <option value="Miss">Miss</option>
+                                            </select>
+                                             </li>
+                                             </ul> 
+                                               
+				        		      
+                                        <ul>
+                                        <li> 
+                                        <label class="box">First name</label>
+                                        <input id="firstName" type="text"/>
+                                        </li>
+                                        </ul>
+                                        <ul>
+                                        <li>
+                                        <label class="box">Surname</label>
+                                        <input id="surName" type="text"/>
+                                         </li>
+                                         </ul>
+                                         <ul>
+                                         <li>
+                                         <label class="box">Address</label>
+                                         <input id="address" type="text"/>
+                                         </li>
+                                         </ul>
+                                         <ul>
+                                         <li>
+                                         <label class="box">Address Line 2</label>
+                                         <input id="addressLine2" type="text"/>
+                                         </li>
+                                         </ul>
+                                         <ul>
+                                         <li>
+                                         <label class="box">Town/City</label>
+                                         <input id="town" type="text"/>
+                                         </li>
+                                         </ul>
+                                         <ul>
+                                         <li>
+                                         <label class="box">Post code</label>
+                                         <input id="postCode" type="text"/>
+                                         </li>
+                                         </ul>
+   									
+                                    		<!--end left_content -->
+   
+   
+   
+   										
+                                        <p class="headings">Dispatching to</p>
+                                        									
+                                        <ul>
+                                        <li>
+                                        <label class="box">Title</label>
+                                        <select id="sendingTitle">
+                                         
+                                        
+                                        <option selected="selected" value="Mr">Mr</option>
+                                        <option value="Ms">Ms</option>
+                                        <option value="Mrs">Mrs</option>
+                                        <option value="Miss">Miss</option>
+                                        </select>
+                                        </li>
+                                        </ul> 
+                                     	<ul>
+                                    	<li>
+                                        <label class="box">First name</label>
+                                        <input id="sendingFirstName" type="text"/>
+                                        </li>
+                                        </ul>
+                                        <ul>
+                                        <li>
+                                        <label class="box">Surname</label>
+                                        <input id="sendingSurname" type="text"/>
+                                         </li>
+                                         </ul>
+                                         <ul>
+                                         <li>
+                                         <label class="box">Address</label>
+                                        <input id="sendingAddress" type="text"/>
+                                         </li>
+                                         </ul>
+                                         <ul>
+                                         <li>
+                                         <label class="box">Address Line 2</label>
+                                        <input id="sendingAddressLine2" type="text"/>
+                                         </li>
+                                         </ul>
+                                         <ul>
+        							     <li>
+                                         <label class="box">Town/City</label>
+                                         <input id="sendingTown" type="text"/>
+									     </li>
+        							     </ul>
+                                         <ul>
+        							     <li>
+                                         <label class="box">Post code</label>
+                                         <input id="sendingPostCode" type="text"/>
+									     </li>
+        							     </ul>
+                                       
+                                        <!--end right content -->
+   
+                                                  
+                                      <input class="detalis" name="Place your order" id="calculateButton" value="Place your order" onclick="takeDetalis()" type="button"/>
+                                     
+                                      
+                  <div id="details">
+                                            
+                                                    <div class="leftdetalis">
+                           							<p>Personal detalis</p>
+                                                    <span id="dispTitle"></span>
+                                                    <span id="dispFirstName"></span>
+                                                    <span id="dispSurname"></span><br/>
+                                                    <span id="dispAddress"></span>
+                                                    <span id="dispAddressLine2"></span><br/>
+                                                    <span id="dispTown"></span><br/>
+                                                    <span id="dispPostCode"></span>
+                                                    </div><!--end leftdetalis -->
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            		 <div class="rightdetalis">
+                                                                     <p>Delivery detalis</p>
+                                                                     <span id="dispSenTitle"></span>
+                                                                     <span id="dispSenFirstName"></span>
+                                                                  	 <span id="dispSenSurname"></span><br/>
+                                                            		 <span id="dispSenAddress"></span>         
+                                                           			 <span id="dispSenAddressLine2"></span><br />
+                                                            		 <span id="dispSenTown"></span><br/>
+                                                          			 <span id="dispSenPostCode"></span>
+                                                            		 </div><!--end rightdetalis -->
+                                                            
+                                                            
+                                                            </div>
+                                                              
+                                                               
+                                                               
+      														
+										  </div><!--end payment_wrapper -->
+                                         
+                                                           
+                                        
+                 
+                                      	 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                       
+                                        
+                                         
+                                                         
+                                        
+                                        
+   
+										</div><!--end content container -->
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                         
+                                            
+                                            
+                                             
+												<div id="footer">
+												  <p>M Ruta: FMA Javascript © 2013</p>
+                      																																			<div id="validator">
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+    <a href="http://validator.w3.org/check?uri=referer"><img
+      src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
+  
+  </div>
+           </div><!--end footer -->
+
+</div><!--end content -->
+
+
+</body></html>
